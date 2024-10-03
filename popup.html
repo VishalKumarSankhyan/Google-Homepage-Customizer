@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Background Changer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h2>Google Homepage Customizer</h2>
+    <div class="container">
+        <h3>Hide Language Option</h3>
+        <label for="myToggle">
+            <input type="checkbox" id="myToggle" class="android-toggle-switch">
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h3>Hide Bottom Info</h3>
+        <label for="myToggle2">
+            <input type="checkbox" id="myToggle2" class="android-toggle-switch2">
+            <span class="toggle-slider2"></span>
+        </label>
+    </div>
+
+    <div class="container">
+        <h3>Custom Background</h3>
+        <label for="myToggle3">
+            <input type="checkbox" id="myToggle3" class="android-toggle-switch3">
+            <span class="toggle-slider3"></span>
+        </label>
+    </div>
+
+    <section id="wallpaper_section">
+        <div class="wallpaper_selector_conatiner">
+
+        </div>
+        <button id="view-more-button">View More</button>
+
+
+        <hr class="ios-style">
+    </section>
+
+    <div class="container">
+        <h3>Show Shortcut</h3>
+        <label for="myToggle4">
+            <input type="checkbox" id="myToggle4" class="android-toggle-switch4">
+            <span class="toggle-slider4"></span>
+        </label>
+    </div>
+
+
+    <section id="shortcut-section">
+        <hr class="ios-style">
+        <form id="shortcutForm">
+            <input type="text" id="websiteName" name="websiteName" placeholder="Website Name:" required
+                autocomplete="off">
+            <br>
+            <input type="url" id="websiteLink" name="websiteLink" placeholder="Website Link:" required
+                autocomplete="off">
+            <br>
+            <button type="submit">Add Shortcut</button>
+        </form>
+
+        <ul id="draggable-list" class="website-list">
+
+        </ul>
+
+    </section>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

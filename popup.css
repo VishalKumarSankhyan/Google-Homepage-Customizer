@@ -1,0 +1,580 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    background-color: #f9f9f9;
+    width: 300px;
+    padding: 10px;
+
+}
+
+.android-toggle-switch {
+    display: none;
+}
+
+.toggle-slider {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    border-radius: 30px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-slider::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+}
+
+.android-toggle-switch:checked+.toggle-slider {
+    background-color: #4CAF50;
+}
+
+.android-toggle-switch:checked+.toggle-slider::after {
+    left: calc(100% - 23px);
+}
+
+
+.android-toggle-switch2 {
+    display: none;
+}
+
+.toggle-slider2 {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    border-radius: 30px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-slider2::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+}
+
+.android-toggle-switch2:checked+.toggle-slider2 {
+    background-color: #4CAF50;
+}
+
+.android-toggle-switch2:checked+.toggle-slider2::after {
+    left: calc(100% - 23px);
+}
+
+
+
+.android-toggle-switch3 {
+    display: none;
+}
+
+.toggle-slider3 {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    border-radius: 30px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-slider3::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+}
+
+.android-toggle-switch3:checked+.toggle-slider3 {
+    background-color: #4CAF50;
+}
+
+.android-toggle-switch3:checked+.toggle-slider3::after {
+    left: calc(100% - 23px);
+}
+
+
+
+
+.android-toggle-switch4 {
+    display: none;
+}
+
+.toggle-slider4 {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    border-radius: 30px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-slider4::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+}
+
+.android-toggle-switch4:checked+.toggle-slider4 {
+    background-color: #4CAF50;
+}
+
+.android-toggle-switch4:checked+.toggle-slider4::after {
+    left: calc(100% - 23px);
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+.container>label {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.container>h3 {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.file-chooser {
+    position: relative;
+}
+
+.file-chooser input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-chooser button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+*/
+
+/*
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button#setBackground {
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+*/
+
+
+.input-file {
+    display: none;
+}
+
+.input-file-label {
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.input-file-label::after {
+    content: 'Choose File';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #333;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.input-file:focus+.input-file-label::after {
+    outline: none;
+    box-shadow: 0 0 0 3px -webkit-focus-ring-color;
+}
+
+.input-file+.input-file-label::after {
+    color: #000;
+}
+
+
+.set-background-button {
+    background-color: #007AFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.set-background-button:hover {
+    background-color: #0066FF;
+}
+
+.set-background-button:active {
+    background-color: #0055FF;
+}
+
+
+
+.shortcut-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.shortcut-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.shortcut-item img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.shortcut-item.add-shortcut {
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+/* General form styling */
+/*#shortcutForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}*/
+
+/* Label styling */
+#shortcutForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input styling */
+#shortcutForm input[type="text"],
+#shortcutForm input[type="url"] {
+    width: 100%;
+    padding: 9px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#shortcutForm input[type="text"]:focus,
+#shortcutForm input[type="url"]:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+/* Button styling */
+#shortcutForm button {
+    width: 100%;
+    padding: 9px 12px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#shortcutForm button:hover {
+    background-color: #005bb5;
+}
+
+hr.ios-style {
+    border: none;
+    height: 1px;
+    background: #d1d1d1;
+    margin: 20px 0;
+}
+
+
+
+#draggable-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+    max-height: 250px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+
+.website-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.website-list li {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+    display: flex;
+}
+
+.website-list li>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.website-name {
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.website-url {
+    color: #007aff;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.website-url:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar */
+    height: 10px;
+    /* Height of the scrollbar */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background color of the track */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+
+.ios-button {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0px 5px;
+
+    min-height: 35px;
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ios-button>svg {
+    min-height: 18px;
+    min-width: 18px;
+
+    max-height: 18px;
+    max-width: 18px;
+}
+
+
+/*
+        .update {
+            background-color: #007aff;
+        }
+
+        .update:hover {
+            background-color: #005bb5;
+        }
+
+        .delete {
+            background-color: #ff3b30;
+        }
+
+        .delete:hover {
+            background-color: #c1271d;
+        }
+        */
+
+
+.wallpaper_selector_conatiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-height: 132px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+
+.wallpaper_selector {
+    height: 65px;
+    width: 90px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.wallpaper_selector.active {
+    outline: 4px solid #007aff;
+}
+
+.wallpaper_selector:hover {
+    outline: 4px solid #007aff;
+}
+
+.wallpaper_selector img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wallpaper_selector:hover img {
+    transform: scale(1.1);
+}
+
+#view-more-button {
+    width: 100%;
+    padding: 9px 12px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#view-more-button:hover {
+    background-color: #005bb5;
+}
